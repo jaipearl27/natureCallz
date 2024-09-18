@@ -55,7 +55,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <img src="/whyChoose2.webp" className="!w-full !h-full rounded-lg" />
+            <img
+              src="/whyChoose2.webp"
+              className="!w-full !h-full rounded-lg"
+            />
           </div>
           <div className="relative w-[30%]  border border-emerald-700 rounded-lg hover:-translate-y-3 transition duration-300">
             <div className="absolute top-0 left-0 rounded-lg h-full bg-black/30 flex flex-col justify-between">

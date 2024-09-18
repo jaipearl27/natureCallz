@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [toggleNav, setToggleNav] = useState(false);
-  const [toggleCss, setToggleCss] = useState(false);
 
-  //state for window width
+  // state for window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // useEffect for window width
@@ -44,6 +43,13 @@ const Header = () => {
     };
   }, []);
 
+  const searchYahoo = (event) => {
+    event.preventDefault(); // Prevent form from submitting
+    const query = document.getElementById("searchQuery").value;
+    const url = `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`;
+    window.location.href = url;
+  };
+
   return (
     <header className="fixed w-screen z-[999] h-[70px]">
       <nav
@@ -61,21 +67,19 @@ const Header = () => {
             </span>
           </a>
         </div>
-        <div>
-
-        </div>
-        <div className="flex items-center w-[30%] ">
-          <form class="w-full">
+        
+        <div className="flex items-center w-[30%]">
+          <form onSubmit={searchYahoo} className="w-full">
             <label
-              for="default-search"
-              class="mb-2 text-sm font-medium text-gray-900 sr-only"
+              htmlFor="searchQuery"
+              className="mb-2 text-sm font-medium text-gray-900 sr-only"
             >
               Search
             </label>
-            <div class="relative">
-              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <div className="relative">
+              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg
-                  class="w-4 h-4 text-white "
+                  className="w-4 h-4 text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -83,55 +87,73 @@ const Header = () => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                   />
                 </svg>
               </div>
               <input
-                type="search"
-                id="default-search"
-                class="block w-full p-4 ps-10 font-light tracking-wider text-lg text-white bg-transparent  outline-none placeholder:text-white"
-                placeholder="Search the web to help nature..."
+                type="text"
+                id="searchQuery"
+                className="block w-full p-4 ps-10 font-light tracking-wider text-lg text-white bg-transparent  outline-none placeholder:text-white"
+                placeholder="Search Yahoo to help nature..."
                 required
               />
-              {/* <button
-                  type="submit"
-                  class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Search
-                </button> */}
+              <button
+                type="submit"
+                className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+              >
+                Search
+              </button>
             </div>
           </form>
         </div>
 
-        <div
-          className="hidden justify-between items-center w-auto lg:flex"
-        >
+        <div className="hidden justify-between items-center w-auto lg:flex">
           <ul className="flex flex-col mt-4 font-normal lg:flex-row lg:mt-0 h-full">
-            <a href="#" className="text-white h-full shadow-[0_0_0_1px#d1d1d1] hover:bg-black/30 transition duration-300 " aria-current="page">
+            <a
+              href="#"
+              className="text-white h-full shadow-[0_0_0_1px#d1d1d1] hover:bg-black/30 transition duration-300"
+              aria-current="page"
+            >
               <li className="px-8 h-full text-lg flex flex-col justify-center">
                 Home
               </li>
             </a>
-            <a href="#" className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300 " aria-current="page">
+            <a
+              href="#"
+              className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300"
+              aria-current="page"
+            >
               <li className="px-8 h-full text-lg flex flex-col justify-center">
                 About
               </li>
             </a>
-            <a href="#" className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300 " aria-current="page">
+            <a
+              href="#"
+              className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300"
+              aria-current="page"
+            >
               <li className="px-8 h-full text-lg flex flex-col justify-center">
                 Contact
               </li>
             </a>
-            <a href="#" className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300 " aria-current="page">
+            <a
+              href="#"
+              className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300"
+              aria-current="page"
+            >
               <li className="px-8 h-full text-lg flex flex-col justify-center">
                 Privacy Policy
               </li>
             </a>
-            <a href="#" className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300 " aria-current="page">
+            <a
+              href="#"
+              className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300"
+              aria-current="page"
+            >
               <li className="px-8 h-full text-lg flex flex-col justify-center">
                 Terms of Use
               </li>
