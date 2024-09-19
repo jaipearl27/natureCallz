@@ -123,11 +123,11 @@ const Header = () => {
               </li>
             </a>
             <a
-              href="#"
+              href="/about"
               className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300"
               aria-current="page"
             >
-              <li className="px-8 h-full text-lg flex flex-col justify-center">
+              <li className="px-8 h-full text-lg flex flex-col justify-center" >
                 About
               </li>
             </a>
@@ -141,7 +141,7 @@ const Header = () => {
               </li>
             </a>
             <a
-              href="#"
+              href="/PrivacyPolicy"
               className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300"
               aria-current="page"
             >
