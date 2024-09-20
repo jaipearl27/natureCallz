@@ -51,10 +51,10 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-screen z-[999] h-[70px]">
+    <header className="fixed w-screen z-[999] h-[70px] top-0">
       <nav
         className={`${
-          toggleNav ? "bg-black" : "bg-transparent"
+          toggleNav ? "bg-black" : "bg-[#00000065]"
         } flex justify-between h-full shadow-[0_1px#d1d1d1] transition duration-500`}
       >
         <div className="flex justify-center h-full w-[15%] shadow-[1px_0#d1d1d1]">
@@ -114,7 +114,7 @@ const Header = () => {
         <div className="hidden justify-between items-center w-auto lg:flex">
           <ul className="flex flex-col mt-4 font-normal lg:flex-row lg:mt-0 h-full">
             <a
-              href="#"
+              href="/"
               className="text-white h-full shadow-[0_0_0_1px#d1d1d1] hover:bg-black/30 transition duration-300"
               aria-current="page"
             >
@@ -132,7 +132,7 @@ const Header = () => {
               </li>
             </a>
             <a
-              href="#"
+              href="/contact"
               className="text-white h-full shadow-[1px_0#d1d1d1] hover:bg-black/30 transition duration-300"
               aria-current="page"
             >

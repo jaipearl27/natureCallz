@@ -1,10 +1,16 @@
 import React from "react";
+import Banner from "../components/Banner";
 
 function PrivacyPolicy() {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center  text-center line-height px-20 mt-10">
-        <h1 className="text-2xl  mb-4">Privacy Policy</h1>
+       <Banner img="/banner.jpg"/>
+      <div className="flex flex-col items-center justify-center  text-center line-height px-20 mt-10 py-20">
+           
+      <h1 className="text-4xl font-extrabold text-gray-900 mb-6  pb-2">
+  Privacy Policy
+</h1>
+
         <div className="mb-20 text-start">
           <p className="font-sans text-zinc-500 text-start">
             At Naturecallz, accessible from Naturecallz.com, one of our main
@@ -44,7 +50,7 @@ function PrivacyPolicy() {
             privacy policies of those third parties. We encourage you to review
             the policies of such third parties.
           </p>
-          <h2 className="font-sans text-black-500 text-start text-3xl">
+          <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
             Services Included in this Privacy Policy
           </h2>
           <div className="">
@@ -70,8 +76,7 @@ function PrivacyPolicy() {
             </ol>
           </div>
           <div className="font-sanstext-start">
-            <h2 className="font-sans text-black-500 text-start text-3xl">
-              Consent
+          <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">              Consent
             </h2>
 
             <p className="font-sans text-zinc-500 text-start">
@@ -79,7 +84,7 @@ function PrivacyPolicy() {
               Privacy Policy and agree to its terms.
             </p>
             <div>
-            <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5 leading-relaxed">
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 Information we collect
               </h2>
               <p className="font-sans text-zinc-500 text-start">
@@ -103,7 +108,7 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-            <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5 leading-relaxed">
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 How we use your information
               </h2>
               <p className="font-sans text-zinc-500 text-start">
@@ -121,8 +126,7 @@ function PrivacyPolicy() {
                 and prevent fraud
               </p>
               <div>
-                <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5">
-                  {" "}
+              <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                   Log Files
                 </h2>
               </div>
@@ -145,7 +149,7 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5">
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 Cookies and Web Beacons
               </h2>
               <p className="font-sans text-zinc-500 text-start">
@@ -158,7 +162,7 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5">
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 Advertising Partners Privacy Policies
               </h2>
               <p className="font-sans text-zinc-500 text-start">
@@ -183,7 +187,7 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5">
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 Third Party Privacy Policies
               </h2>
               <p className="font-sans text-zinc-500 text-start">
@@ -202,7 +206,7 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5 leading-relaxed">
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 CCPA Privacy Rights (Do Not Sell My Personal Information)
               </h2>
               <p className="font-sans text-zinc-500 text-start leading-7">
@@ -229,7 +233,7 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5 leading-relaxed">
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 GDPR Data Protection Rights
               </h2>
 
@@ -281,9 +285,8 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5 leading-relaxed">
-                {" "}
-                Children's Information
+            <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
+              Children's Information
               </h2>
               <p className="font-sans text-zinc-500 text-start leading-8">
                 Another part of our priority is adding protection for children
@@ -302,7 +305,7 @@ function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <h2 className="font-sans text-black-500 text-start text-3xl mt-5 mb-5 leading-relaxed">
+              <h2 className="font-bold text-2xl text-gray-800 mt-8 mb-4 text-start pb-2">
                 Contact & data protection officer
               </h2>
               <p className="font-sans text-zinc-500 text-start leading-8">
@@ -337,65 +340,7 @@ function PrivacyPolicy() {
           </div>
         </div>
 
-        {/* <div className="container flex flex-row align-center justify-center gap-60 mb-10">
-          <div>
-            <img src={loggo} alt="" className="w-24 h-24" />
-          </div>
-          <div className="text-[#000] flex flex-col text-start">
-            <h1 className="text-2xl mb-5 font-semibold font-Work Sans">
-              Site Map
-            </h1>
-            <div>
-              <div className="font-sans text-zinc-500">About</div>
-              <div className="font-sans text-zinc-500">Contact</div>
-              <div className="font-sans text-zinc-500">Terms of Use</div>
-              <div className="font-sans text-zinc-500">Privacy</div>
-              <div />
-            </div>
-          </div>
-          <div className="text-[#000]">
-            <h1 className="text-2xl mb-5 font-semibold"> Resources</h1>
-            <div className="font-sans text-zinc-500">Help</div>
-          </div>
-        </div> */}
-
-        {/* <div className="flex gap-4">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-400 bg-[#40C047] p-2
-   rounded-full"
-          >
-            <FaFacebookF />
-          </a>
-
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-400 bg-[#40C047] p-2 rounded-full"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-400 bg-[#40C047] p-2 rounded-full"
-          >
-            <FaInstagram />
-          </a>
-        </div>
-        <div className="flex flex-row justify-between items-center w-full mt-5 mb-5">
-  <div>
-    Copyright <span className="text-[#40C047]" >@NatureCallz</span> All Rights Reserved
-  </div>
-  <div>
-    <a href="#" className="hover:underline">Terms of Use</a> | 
-    <a href="#" className="hover:underline">Privacy Policy</a>
-  </div>
-</div> */}
+     
       </div>
     </div>
   );

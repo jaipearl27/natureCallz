@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "../components/Banner";
 
 const Home = () => {
   return (
@@ -77,6 +78,21 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section>
+  <div className="mb-20 relative">
+    <Banner img="/background-1.png" />
+    <div className="absolute inset-0 flex flex-col items-center justify-center">
+      <p className="text-white">WE DON'T COLLECT ANY DATA ON OUR USERS.</p>
+      <h1 className="text-center text-[50px] text-white">Your Privacy is Our First Priority</h1>
+      <p className="text-center text-white">You can just sit back, relax, search, and make an impact today!</p>
+    </div>
+  </div>
+</section>
+
+
+
+
     </div>
   );
 };

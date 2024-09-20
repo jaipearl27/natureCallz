@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import Footer from "./components/layout/Footer";
 import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Contact from "./pages/Contact";
 
 ///// pages /////
 
@@ -41,7 +42,12 @@ const App = () => {
        {
         path:'/PrivacyPolicy',
         element:<PrivacyPolicy/>
+       },
+       {
+        path:'/contact',
+        element:<Contact/>
        }
+
       ],
     },
 
