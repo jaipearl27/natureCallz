@@ -11,6 +11,7 @@ import Footer from "./components/layout/Footer";
 import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
+import TermOfUse from "./pages/TermOfUse";
 
 ///// pages /////
 
@@ -46,7 +47,12 @@ const App = () => {
        {
         path:'/contact',
         element:<Contact/>
+       },
+       {
+        path:'/termofuse',
+        element:<TermOfUse/>
        }
+
 
       ],
     },

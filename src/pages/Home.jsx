@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <section className="relative h-screen z-[0]">
-        <div className="bg-black/30 w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center">
+        <div className="bg-black/30 w-full  absolute top-0 left-0 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center text-center gap-4">
             <div className="text-emerald-500 text-2xl">
               SEARCH TODAY AND CONTRIBUTE TO MOTHER EARTH.
@@ -18,7 +18,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src="/banner.jpg" className="!w-full !h-full" />
+        <img src="/banner.jpg" className="sm:w-full sm: h-full" />
       </section>
       <section className="h-screen w-screen py-10 space-y-10">
         <div className="flex flex-col items-center text-center gap-4">
@@ -29,13 +29,13 @@ const Home = () => {
         </div>
         <div className="flex flex-row gap-2 justify-center">
           <div className="relative w-[30%]  border border-emerald-700 rounded-lg hover:-translate-y-3 transition duration-300">
-            <div className="absolute top-0 left-0 rounded-lg h-full bg-black/30 flex flex-col justify-between">
+            <div className="absolute top-0 left-0 rounded-lg h-full bg-black/30  flex flex-col justify-between">
               <div className="p-4 space-y-6">
                 <div className="text-emerald-400 text-lg font-semibold">01</div>
                 <div className="text-slate-100 text-xl font-semibold">
                   Search for good cause
                 </div>
-                <div className="text-slate-50 text-xl">
+                <div className="sm:text-slate-50 px-3 text-black text-xl w-full ">
                   NatureCallz was created in order to make your serach valuable
                   not only for your own needs but also for planet earth.
                 </div>
