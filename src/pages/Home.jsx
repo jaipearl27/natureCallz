@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <section className="relative h-screen z-[0]">
-        <div className="bg-black/30 w-full  absolute top-0 left-0 flex flex-col justify-center items-center">
+        <div className="bg-black/30 w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center text-center gap-4">
             <div className="text-emerald-500 text-2xl">
               SEARCH TODAY AND CONTRIBUTE TO MOTHER EARTH.
